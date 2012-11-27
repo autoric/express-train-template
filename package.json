@@ -7,7 +7,7 @@
         "npm": ">=1.1"
     },
     "dependencies": {
-        "base12": "0.3.1",
+        "structure": "git://github.com/autoric/structure.git",
         "express": "latest",
         "connect": "2.0.3",
         "connect-timeout": "latest",
@@ -26,12 +26,11 @@
     },
     "scripts": {
         "start": "./run",
-        "lock": "scripts/module_lock.js",
-        "postinstall": "scripts/postinstall",
+        "postinstall": "bin/postinstall",
         "test": "vows test/*.vows.js"
     },
     "constants": {
-        "title": "base12 app",
+        "title": "structure app",
         "session_length": 1209600000,
         "request_timeout": 10000
     }
