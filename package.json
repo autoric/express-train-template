@@ -7,7 +7,7 @@
         "npm": ">=1.1"
     },
     "dependencies": {
-        "structure": "git://github.com/autoric/structure.git",
+        "express-train": "git://github.com/autoric/express-train.git",
         "express": "latest",
         "connect": "2.0.3",
         "connect-timeout": "latest",

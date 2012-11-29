@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-var base12 = require('base12');
+var train = require('express-train');
 
-base12.balance(__dirname + '/app', process.argv[2]);
+train.balance(__dirname + '/app', process.argv[2]);
