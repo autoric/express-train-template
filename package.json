@@ -7,9 +7,8 @@
         "npm": ">=1.1"
     },
     "dependencies": {
-        "express-train": "git://github.com/autoric/express-train.git",
         "express": "latest",
-        "connect": "2.0.3",
+        "connect": "latest",
         "connect-timeout": "latest",
         "mongodb": "latest",
         "connect-mongodb": "latest",
