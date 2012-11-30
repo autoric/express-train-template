@@ -7,14 +7,8 @@ module.exports = function (app) {
         partialsDir:app.dir + "/views/partials"
     }));
 
-    // expose error' and 'message' to all views that are rendered
-    app.locals.use(function (req, res) {
-        res.locals.environment = req.app.environment;
-        res.locals.user = req.user || null;
-    });
-
     // Static locals
-
     app.locals({
+        title: app.constants.name
     });
 };
