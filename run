@@ -1,5 +1,0 @@
-#!/usr/bin/env node
-
-var train = require('express-train');
-
-train.balance(__dirname + '/app', process.argv[2]);

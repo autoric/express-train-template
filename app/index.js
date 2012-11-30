@@ -1,3 +1,3 @@
-var base12 = require('base12');
+var train = require('express-train');
 
-module.exports = base12.app(__dirname);
+module.exports = train.app(__dirname);
