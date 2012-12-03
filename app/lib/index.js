@@ -1,7 +1,1 @@
-module.exports = [
-    require('./views'),
-    require('./dal'),
-    require('./middleware'),
-    require('./params'),
-    require('./routes')
-]
+module.exports = ['views', 'dal', 'middleware', 'params', 'routes'];

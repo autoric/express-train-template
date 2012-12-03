@@ -1,4 +1,5 @@
-var hbs = require('express-hbs');
+var hbs = require('express-hbs'),
+    path = require('path');
 
 module.exports = function (app) {
 
@@ -6,11 +7,11 @@ module.exports = function (app) {
     app.set('view engine', 'hbs');
 
     app.engine('hbs', hbs.express3({
-        partialsDir:app.dir + "/views/partials"
+        partialsDir:path.join(app.dir, "/views/partials")
     }));
 
     // Static locals
     app.locals({
-        title: app.constants.name
+        title:app.constants.name
     });
 };
