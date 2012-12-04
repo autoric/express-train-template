@@ -23,8 +23,9 @@
         "vows": "latest",
         "commander": "latest"
     },
+    "main":"./app/index.js",
     "scripts": {
-        "start": "./run",
+        "start":"./app/index.js",
         "postinstall": "bin/postinstall",
         "test": "vows test/*.vows.js"
     },

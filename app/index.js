@@ -1,3 +1,3 @@
 var train = require('express-train');
 
-module.exports = train.app(__dirname);
+module.exports = train.app(__dirname).start();
