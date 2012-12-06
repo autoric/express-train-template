@@ -12,6 +12,6 @@ module.exports = function (app) {
 
     // Static locals
     app.locals({
-        title:app.constants.name
+        title:app.constants.title
     });
 };

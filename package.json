@@ -8,7 +8,7 @@
     },
     "dependencies": {
         "express": "latest",
-        "express-train":"git://github.com/autoric/express-train.git",
+        "express-train":"latest",
         "connect": "latest",
         "connect-timeout": "latest",
         "mongodb": "latest",
