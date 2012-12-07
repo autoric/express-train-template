@@ -1,1 +1,1 @@
-module.exports = ['views', 'dal', 'middleware', 'params', 'routes'];
+module.exports = ['logging', 'views', 'dal', 'middleware', 'params', 'routes'];

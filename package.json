@@ -9,20 +9,16 @@
     "dependencies": {
         "express": "latest",
         "express-train":"latest",
-        "connect": "latest",
         "connect-timeout": "latest",
-        "mongodb": "latest",
         "connect-mongodb": "latest",
         "mongoose":"latest",
-        "strobe": "latest",
         "async": "latest",
         "express-hbs": "latest",
-        "less":"latest"
+        "passport":"latest",
+        "winston":"latest"
     },
     "devDependencies": {
-        "handlebars": "latest",
-        "vows": "latest",
-        "commander": "latest"
+        "mocha": "latest"
     },
     "main":"./app/index.js",
     "scripts": {
