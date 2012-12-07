@@ -12,7 +12,8 @@ module.exports = function (app) {
     });
 
     var session_middleware = express.session({
-        key:app.config.key,
+        key:app.config.session.key,
+        secret: app.config.session.secret,
         store:mongoStore
     });
 
