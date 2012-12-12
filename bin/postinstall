@@ -5,15 +5,21 @@ var path = require('path'),
     util = require('util');
 
 var dir = process.cwd();
-var src = path.join(dir, '/config/default.env.json'),
+var src,
     dst = path.join(dir, '/.env.json');
 
-path.exists(dst, function(exists) {
+
+var exists = fs.existsSync(dst);
   if (exists) {
     console.log('Environment config (.env.js) found.');
   }
   else {
-    console.log('Environment config (.env.js) not found, copying from env/default.env.js...');
+    var env = process.env.NODE_ENV;
+    var src = path.join(dir, '/config', env+'.env.json');
+    if(!fs.existsSync(src)){
+        src = path.join(dir, '/config', 'default.env.json');
+    }
+    console.log('Environment config (.env.js) not found, copying from %s...', src);
     var rs = fs.createReadStream(src);
     var ws = fs.createWriteStream(dst);
     util.pump(rs, ws, function(err, result) {
@@ -21,5 +27,3 @@ path.exists(dst, function(exists) {
       console.log('done.');
     });
   }
-});
-
