@@ -23,8 +23,7 @@
   "main": "./app/index.js",
   "scripts": {
     "start": "./app/index.js",
-    "postinstall": "bin/postinstall",
-    "test": "vows test/*.vows.js"
+    "test": "mocha test"
   },
   "constants": {
     "title": "structure app",
