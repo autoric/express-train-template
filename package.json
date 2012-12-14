@@ -1,34 +1,34 @@
 {
-    "name": "express-train-template",
-    "version": "0.0.1",
-    "directories": {},
-    "engines": {
-        "node": ">=0.6.6",
-        "npm": ">=1.1"
-    },
-    "dependencies": {
-        "express": "latest",
-        "express-train":"latest",
-        "connect-timeout": "latest",
-        "connect-mongodb": "latest",
-        "mongoose":"latest",
-        "async": "latest",
-        "express-hbs": "latest",
-        "passport":"latest",
-        "winston":"latest"
-    },
-    "devDependencies": {
-        "mocha": "latest"
-    },
-    "main":"./app/index.js",
-    "scripts": {
-        "start":"./app/index.js",
-        "postinstall": "bin/postinstall",
-        "test": "vows test/*.vows.js"
-    },
-    "constants": {
-        "title": "structure app",
-        "session_length": 1209600000,
-        "request_timeout": 10000
-    }
+  "name": "express-train-template",
+  "version": "0.1.0",
+  "directories": {},
+  "engines": {
+    "node": ">=0.6.6",
+    "npm": ">=1.1"
+  },
+  "dependencies": {
+    "express": "latest",
+    "express-train": "latest",
+    "connect-timeout": "latest",
+    "connect-mongodb": "latest",
+    "mongoose": "latest",
+    "async": "latest",
+    "express-hbs": "latest",
+    "passport": "latest",
+    "winston": "latest"
+  },
+  "devDependencies": {
+    "mocha": "latest"
+  },
+  "main": "./app/index.js",
+  "scripts": {
+    "start": "./app/index.js",
+    "postinstall": "bin/postinstall",
+    "test": "vows test/*.vows.js"
+  },
+  "constants": {
+    "title": "structure app",
+    "session_length": 1209600000,
+    "request_timeout": 10000
+  }
 }
