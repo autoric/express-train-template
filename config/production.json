@@ -8,9 +8,7 @@
         "port":4000
     },
     "mongodb":{
-        "host":"localhost",
-        "port":"27017",
-        "db": "test"
+        "uri":"mongodb://localhost:27017/express-train"
     },
     "session":{
         "url":"mongodb://localhost:27017/session"

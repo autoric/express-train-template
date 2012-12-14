@@ -8,12 +8,10 @@
         "port":4000
     },
     "mongodb":{
-        "host":"localhost",
-        "port":"27017",
-        "db": "test"
+        "uri":"mongodb://localhost:27017/{{name}}"
     },
     "session":{
-        "url":"mongodb://localhost:27017/session"
+        "url":"mongodb://localhost:27017/{{name}}"
     },
     "character_encoding":"utf-8"
 }
