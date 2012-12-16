@@ -25,7 +25,7 @@ module.exports = function (app) {
 
     // Middleware stack for all requests
     app.use(express['static'](app.set('public')));                      // static files in /public
-    app.use(connect_timeout({ time:app.constants.request_timeout }));   // request timeouts
+    app.use(connect_timeout({ time:app.config.request_timeout }));   // request timeouts
     app.use(express.cookieParser());                                    // req.cookies
     app.use(session_middleware);                                        // req.session
     app.use(express.bodyParser());                                      // req.body & req.files

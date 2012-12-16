@@ -20,7 +20,7 @@
   "devDependencies": {
     "mocha": "latest"
   },
-  "main": "./app/index.js",
+  "main": "./node_modules/.bin/train run",
   "scripts": {
     "start": "./app/index.js",
     "test": "mocha test"

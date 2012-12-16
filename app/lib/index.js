@@ -1,1 +1,5 @@
-module.exports = ['logging', 'views', 'middleware', 'routes'];
+module.exports = {
+    config: ['logging', 'dal'],
+    load: ['views', 'routes', 'middleware'],
+    start:[]
+};
