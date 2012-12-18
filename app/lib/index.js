@@ -1,5 +1,5 @@
 module.exports = {
-    config: ['logging', 'dal'],
-    load: ['views', 'routes', 'middleware'],
-    start:[]
+    onInit: ['logging', 'dal'],
+    onSetup: ['views', 'routes', 'middleware'],
+    onStart:[]
 };
