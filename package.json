@@ -15,7 +15,8 @@
     "async": "latest",
     "express-hbs": "latest",
     "passport": "latest",
-    "winston": "latest"
+    "winston": "latest",
+    "express-trace": "0.0.3"
   },
   "devDependencies": {
     "mocha": "latest"
