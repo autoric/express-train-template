@@ -1,4 +1,5 @@
 var express = require('express'),
+    mongoose = require('mongoose'),
     connect_timeout = require('connect-timeout'),
     MongoStore = require('connect-mongodb');
 
