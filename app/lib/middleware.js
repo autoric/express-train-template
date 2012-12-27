@@ -9,7 +9,7 @@ module.exports = function (app) {
 
     // Sessions
     var mongoStore = new MongoStore({
-        mongoose_connection: mongoose.connection
+        url: app.config.mongodb.uri
     });
 
     var session_middleware = express.session({

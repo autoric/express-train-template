@@ -1,5 +1,5 @@
 module.exports = {
     onInit: ['logging', 'dal'],
-    onSetup: ['views', 'routes', 'middleware'],
+    onSetup: ['views', 'middleware', 'routes'],
     onStart:[]
 };

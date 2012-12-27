@@ -24,6 +24,7 @@ module.exports = function (app) {
     ]
     controller.create = [
         function (req, res, next) {
+            console.log(req.body);
             var model = new req.Model(req.body);
             model.save(function (err, doc) {
                 if (err) return next(err);
