@@ -21,9 +21,9 @@
   "devDependencies": {
     "mocha": "latest"
   },
-  "main": "./node_modules/.bin/train run",
+  "main": "index.js",
   "scripts": {
-    "start": "./app/index.js",
+    "start": "./index.js",
     "test": "mocha test"
   },
   "constants": {
