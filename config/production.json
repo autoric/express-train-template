@@ -1,17 +1,13 @@
 {
-    "view_engine": "hbs",
     "cookie_secret":"mysecret",
     "session":{
-        "key":"mykey"
+        "key":"mykey",
+        "secret": "mysecret"
     },
-    "http":{
-        "port":4000
-    },
+    "request_timeout":1000,
+    "port":4000,
     "mongodb":{
         "uri":"mongodb://localhost:27017/express-train"
-    },
-    "session":{
-        "url":"mongodb://localhost:27017/session"
     },
     "character_encoding":"utf-8"
 }

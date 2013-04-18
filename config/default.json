@@ -1,5 +1,4 @@
 {
-    "view_engine":"hbs",
     "cookie_secret":"mysecret",
     "session":{
         "key":"mykey",
